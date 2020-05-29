@@ -5,8 +5,8 @@
   xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06"
   PolicySchemaVersion="0.3.0.0"
   TenantId="wellpepperb2ctest.onmicrosoft.com"
-  PolicyId="B2C_1A_signup_signin"
-  PublicPolicyUri="http://wellpepperb2ctest.onmicrosoft.com/B2C_1A_signup_signin">
+  PolicyId="B2C_1A_signup_signin_wellpepper"
+  PublicPolicyUri="http://wellpepperb2ctest.onmicrosoft.com/B2C_1A_signup_signin_wellpepper">
 
   <BasePolicy>
     <TenantId>wellpepperb2ctest.onmicrosoft.com</TenantId>
@@ -14,7 +14,7 @@
   </BasePolicy>
 
   <RelyingParty>
-    <DefaultUserJourney ReferenceId="SignUpOrSignIn" />
+    <DefaultUserJourney ReferenceId="SignUpOrSignInWellpepper" />
     <TechnicalProfile Id="PolicyProfile">
       <DisplayName>PolicyProfile</DisplayName>
       <Protocol Name="OpenIdConnect" />
