@@ -1,3 +1,9 @@
+Setup for making SUSI Custompolicy openIdConnect/SignUpOrSigninCaravanHealth.xml work
+Add wellpepper IDP specs
+to get acess token:
+https://docs.microsoft.com/en-us/azure/active-directory-b2c/idp-pass-through-custom
+to do:
+https://docs.microsoft.com/en-us/azure/active-directory-b2c/session-behavior-custom-policy
 
  chprodb2c
 ca87d35e-03fc-4de7-8565-4020cc890235 tenantid
