@@ -12,15 +12,17 @@
       <DisplayName>PolicyProfile</DisplayName>
       <Protocol Name="OpenIdConnect" />
       <OutputClaims>
-        <!--OutputClaim ClaimTypeReferenceId="displayName" />
+        <OutputClaim ClaimTypeReferenceId="displayName" />
         <OutputClaim ClaimTypeReferenceId="givenName" />
-        <OutputClaim ClaimTypeReferenceId="surname" /-->
-        <OutputClaim ClaimTypeReferenceId="email" />
+        <OutputClaim ClaimTypeReferenceId="surname" />
+        <OutputClaim ClaimTypeReferenceId="otherMails"  PartnerClaimType="emails"/>
         <OutputClaim ClaimTypeReferenceId="objectId" PartnerClaimType="sub" />
+         <OutputClaim ClaimTypeReferenceId="objectId" PartnerClaimType="oid" />
         <OutputClaim ClaimTypeReferenceId="identityProvider" />
         <OutputClaim ClaimTypeReferenceId="issuerUserId" PartnerClaimType="idp_sub" />
-        <!--OutputClaim ClaimTypeReferenceId="tenantId" AlwaysUseDefaultValue="true" DefaultValue="{Policy:TenantObjectId}" /-->
+        <OutputClaim ClaimTypeReferenceId="tenantId" AlwaysUseDefaultValue="true" DefaultValue="{Policy:TenantObjectId}" />
          <OutputClaim ClaimTypeReferenceId="identityProviderAccessToken" PartnerClaimType="idp_access_token"/>
+        <OutputClaim ClaimTypeReferenceId="dnn_id" PartnerClaimType="dnn_id"/>
       </OutputClaims>
       <SubjectNamingInfo ClaimType="sub" />
     </TechnicalProfile>
